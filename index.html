@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="flex items-start">
+      <section class="side-bar w-[320px] h-[100vh] bg-bg_black text-white">
+        <a
+          href="/"
+          class="flex justify-center transition-all duration-300 in-expo hover:scale-105 items-center px-[18px] py-[24px] mb-[80px] hover:text-white hover:no-underline"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            class="w-6 h-6 rotate-[120deg] mr-2 text-custom_blue"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5.636 5.636a9 9 0 1012.728 0M12 3v9"
+            />
+          </svg>
+
+          <p class="font-[500] text-[18px] tracking-[1px]">HuynhQui</p>
+        </a>
+
+        <div class="flex items-center justufy-between py-[10px] px-[26px]">
+          <h5 class="w-[100%] flex items-center justufy-between font-[400]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather align-middle mr-2"
+            >
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+            Javascript lesson 1
+          </h5>
+          <p
+            class="w-[20px] h-[20px] rounded-lg bg-custom_blue text-center leading-[20px]"
+          >
+            5
+          </p>
+        </div>
+
+        <ul
+          class="nav nav-tabs flex flex-col px-[26px] border-none"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item ml-[26px]">
+            <a
+              class="nav-link active"
+              id="home-tab"
+              data-toggle="tab"
+              href="#JS1_BT1"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+              >Bài tập 1</a
+            >
+          </li>
+          <li class="nav-item ml-[26px]">
+            <a
+              class="nav-link"
+              id="profile-tab"
+              data-toggle="tab"
+              href="#JS1_BT2"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+              >Bài tập 2</a
+            >
+          </li>
+          <li class="nav-item ml-[26px]">
+            <a
+              class="nav-link"
+              id="contact-tab"
+              data-toggle="tab"
+              href="#JS1_BT3"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              >Bài tập 3</a
+            >
+          </li>
+          <li class="nav-item ml-[26px]">
+            <a
+              class="nav-link"
+              id="contact-tab"
+              data-toggle="tab"
+              href="#JS1_BT4"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              >Bài tập 4</a
+            >
+          </li>
+          <li class="nav-item ml-[26px]">
+            <a
+              class="nav-link"
+              id="contact-tab"
+              data-toggle="tab"
+              href="#JS1_BT5"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              >Bài tập 5</a
+            >
+          </li>
+        </ul>
+
+        <div
+          class="flex items-center justufy-between py-[10px] px-[26px] text-custom_gray"
+        >
+          <h5 class="w-[100%] flex items-center justufy-between font-[400]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather align-middle mr-2"
+            >
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+            Javascript lesson 2
+          </h5>
+          <p
+            class="w-[20px] h-[20px] rounded-lg bg-custom_blue text-center leading-[20px] text-white"
+          >
+            0
+          </p>
+        </div>
+        <div
+          class="flex items-center justufy-between py-[10px] px-[26px] text-custom_gray"
+        >
+          <h5 class="w-[100%] flex items-center justufy-between font-[400]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather align-middle mr-2"
+            >
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+            Javascript lesson 3
+          </h5>
+          <p
+            class="w-[20px] h-[20px] rounded-lg bg-custom_blue text-center leading-[20px] text-white"
+          >
+            0
+          </p>
+        </div>
+      </section>
+
+      <section class="w-[100%]">
+        <header
+          class="h-[70px] shadow-custom_shadow shadow-lg w-[100%] px-[14px] py-[20px] flex justify-between items-center"
+        >
+          <div class="flex items-center justify-start">
+            <div
+              class="humbuger mr-[16px] cursor-pointer w-[26px] h-[26px] my-[5px] flex"
+            >
+              <i
+                class="relative rounded-[1px] h-[3px] w-[24px] bg-custom_black block transision-all duration-100 ease-in-out self-center before:content-[''] before:block before:self-center before:rounded-[1px] before:h-[3px] before:bg-custom_black before:absolute before:-top-[8px] before:w-[20px] after:content-[''] after:block after:self-center after:rounded-[1px] after:h-[3px] after:bg-custom_black after:absolute after:-bottom-[8px] after:w-[16px]"
+              ></i>
+            </div>
+            <div class="search">
+              <form inline="true" class="d-none d-sm-inline-block">
+                <div
+                  class="input-group-navbar input-group min-w-[240px] relative flex w-[100% items-stretch]"
+                >
+                  <input
+                    placeholder="Search projects…"
+                    aria-label="Search"
+                    class="form-control max-w-[200px] h-[calc(2.44375rem + 2px)] bg-bg_gray shadow-none p-[0.45rem 0.75rem] border-0 focus:bg-bg_gray"
+                  /><button
+                    type="button"
+                    class="btn bg-bg_gray text-custom_gray focus:shadow-none"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather bg-bg_gray"
+                    >
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="relative mr-4 cursor-pointer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="align-middle"
+              >
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                ></path>
+              </svg>
+              <span
+                class="absolute -top-[10px] -right-[8px] w-[18px] h-[18px] rounded-full text-center leading-[18px] bg-custom_blue text-white"
+                >4</span
+              >
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="align-middle mr-4 cursor-pointer"
+            >
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              <path d="M18.63 13A17.89 17.89 0 0 1 18 8"></path>
+              <path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"></path>
+              <path d="M18 8a6 6 0 0 0-9.33-5"></path>
+              <line x1="1" y1="1" x2="23" y2="23"></line>
+            </svg>
+            <img
+              src="./assets/img/Flag_of_Vietnam.svg.png"
+              class="w-[20px] h-[20px] rounded-full object-cover mr-4 cursor-pointer"
+              alt="vietnam"
+            />
+            <div class="flex items-center cursor-pointer">
+              <img
+                src="https://i.pravatar.cc/50"
+                class="w-[40px] h-[40px] rounded-full object-cover mr-2"
+                alt="avatar"
+              />
+              <p class="mr-2 text-[14px]">Chris Le</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="3"
+                stroke="currentColor"
+                class="w-3 h-3"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
+          </div>
+        </header>
+
+        <div class="content w-[100%] min-h-custom_100vh bg-bg_gray p-[40px]">
+          <div class="tab-content" id="myTabContent">
+            <!-- -------------------------BAI TAP 1------------------------------------ -->
+            <div
+              class="tab-pane fade show active"
+              id="JS1_BT1"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <p class="text-[20px] font-bold text-custom_black mb-4">
+                Bài tập 1
+              </p>
+              <p class="text-[18px]">Tính tiền lương nhân viên</p>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-blue-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/problem.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Viết chương trình tính tiền luơng nhân viên. Lương 1 ngày là
+                    100,000 VND. Cho người dùng nhập vào số ngày làm.
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/idea.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>Công thức tính lương: Lương 1 ngày * số ngày làm.</p>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-yellow-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/abacus.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Hãy nhập số liệu vào các ô bên dưới để tiến hành thực hiện
+                    phép tính
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <input
+                    id="workDays"
+                    type="number"
+                    class="rounded-[3px] w-[50%]"
+                    placeholder="Nhập số ngày làm việc"
+                  />
+                </div>
+
+                <div class="py-[10px] px-[40px] flex pt-0">
+                  <p class="text-danger italic" id="validation-bt1"></p>
+                </div>
+
+                <div class="py-[10px] px-[40px]">
+                  <button
+                    onclick="handleEx1()"
+                    class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                  >
+                    Thực hiện phép tính
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt1"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                    <span>VND</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- -------------------------BAI TAP 2------------------------------------ -->
+            <div
+              class="tab-pane fade show"
+              id="JS1_BT2"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <p class="text-[20px] font-bold text-custom_black mb-4">
+                Bài tập 2
+              </p>
+              <p class="text-[18px]">Tính giá trị trung bình</p>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-blue-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/problem.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Viết chương trình nhập vào 5 số thực. Tính giá trị trung
+                    bình của 5 số này và xuất ra màn hình.
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/idea.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Giá trị trung bình là tổng của 5 số người dùng nhập chia cho
+                    5.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-yellow-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/abacus.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Hãy nhập số liệu vào các ô bên dưới để tiến hành thực hiện
+                    phép tính
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <input
+                    name="real"
+                    id="realNum1"
+                    type="number"
+                    class="rounded-[3px] w-[50%] mr-2"
+                    placeholder="Nhập số thực thứ 1"
+                  />
+                  <input
+                    name="real"
+                    id="realNum2"
+                    type="number"
+                    class="rounded-[3px] w-[50%] mr-2"
+                    placeholder="Nhập số thực thứ 2"
+                  />
+                  <input
+                    name="real"
+                    id="realNum3"
+                    type="number"
+                    class="rounded-[3px] w-[50%] mr-2"
+                    placeholder="Nhập số thực thứ 3"
+                  />
+                  <input
+                    name="real"
+                    id="realNum4"
+                    type="number"
+                    class="rounded-[3px] w-[50%] mr-2"
+                    placeholder="Nhập số thực thứ 4"
+                  />
+                  <input
+                    name="real"
+                    id="realNum5"
+                    type="number"
+                    class="rounded-[3px] w-[50%]"
+                    placeholder="Nhập số thực thứ 5"
+                  />
+                </div>
+
+                <div class="py-[10px] px-[40px] flex pt-0">
+                  <p id="validation-bt2" class="text-danger italic"></p>
+                </div>
+
+                <div class="py-[10px] px-[40px]">
+                  <button
+                    onclick="handleEx2()"
+                    class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                  >
+                    Thực hiện phép tính
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt2"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                    <span></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- -------------------------BAI TAP 3------------------------------------ -->
+            <div
+              class="tab-pane fade show"
+              id="JS1_BT3"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <p class="text-[20px] font-bold text-custom_black mb-4">
+                Bài tập 3
+              </p>
+              <p class="text-[18px]">Quy đổi tiền</p>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-blue-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/problem.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Giá USD hiện nay đang là 23.500 VND. Viết chương trình quy
+                    đổi từ USD sang VND. Cho người dùng nhập vào số tiền USD.
+                    Tính và xuất ra số tiền sau quy đổi VND.
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/idea.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>Ví dụ: người dùng nhập 2 USD, sẽ xuất ra 47.000 VND</p>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-yellow-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/abacus.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Hãy nhập số liệu vào các ô bên dưới để tiến hành thực hiện
+                    phép tính
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <input
+                    id="usd"
+                    type="number"
+                    class="rounded-[3px] w-[50%]"
+                    placeholder="Nhập số tiền USD cần quy đổi"
+                  />
+                  <span class="font-bold ml-[10px] leading-[42px]">USD</span>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex pt-0">
+                  <p id="validation-bt3" class="text-danger italic"></p>
+                </div>
+
+                <div class="py-[10px] px-[40px]">
+                  <button
+                    onclick="handleEx3()"
+                    class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                  >
+                    Thực hiện phép tính
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt3"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                    <span>VND</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- -------------------------BAI TAP 4------------------------------------ -->
+            <div
+              class="tab-pane fade show"
+              id="JS1_BT4"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <p class="text-[20px] font-bold text-custom_black mb-4">
+                Bài tập 4
+              </p>
+              <p class="text-[18px]">Tính diện tích chu vi hình chữ nhật</p>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-blue-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/problem.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Viết chương trình nhập vào chiều dài và chiều rộng của hình
+                    chữ nhật. Tính và xuất ra diện tích, chu vi hình chữ nhật
+                    đó.
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/idea.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <div>
+                    <p>Công thức:</p>
+                    <p>&nbsp; &nbsp; - Diện tích: dài * rộng</p>
+                    <p>&nbsp; &nbsp; - Chu vi: (dài + rộng) * 2</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-yellow-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/abacus.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Hãy nhập số liệu vào các ô bên dưới để tiến hành thực hiện
+                    phép tính
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <input
+                    id="height"
+                    type="number"
+                    class="rounded-[3px] w-[50%] mr-3"
+                    placeholder="Nhập chiều dài hình chữ nhật"
+                  />
+
+                  <input
+                    id="width"
+                    type="number"
+                    class="rounded-[3px] w-[50%]"
+                    placeholder="Nhập chiều rộng hình chữ nhật"
+                  />
+                </div>
+
+                <div class="py-[10px] px-[40px] flex pt-0">
+                  <p id="validation-bt4" class="text-danger italic"></p>
+                </div>
+
+                <div class="py-[10px] px-[40px]">
+                  <button
+                    onclick="handleEx4()"
+                    class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                  >
+                    Thực hiện phép tính
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt4"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                    <span>Đơn vị</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- -------------------------BAI TAP 5------------------------------------ -->
+            <div
+              class="tab-pane fade show"
+              id="JS1_BT5"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <p class="text-[20px] font-bold text-custom_black mb-4">
+                Bài tập 5
+              </p>
+              <p class="text-[18px]">Tính tổng 2 ký số</p>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-blue-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/problem.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Viết chương trình nhập vào 1 số có 2 chữ số (VD: 12, 44,
+                    83). Tính tổng 2 ký số của số vừa nhập.
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/idea.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>Ví dụ: 12 có tổng 2 ký số là 1 + 2 = 3</p>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-yellow-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/abacus.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Hãy nhập số liệu vào các ô bên dưới để tiến hành thực hiện
+                    phép tính
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <input
+                    id="number-ex5"
+                    type="number"
+                    class="rounded-[3px] w-[50%]"
+                    placeholder="Nhập số có 2 chữ số"
+                  />
+                </div>
+
+                <div class="py-[10px] px-[40px] flex pt-0">
+                  <p
+                    id="validation-bt5"
+                    class="validation-bt1 text-danger italic"
+                  ></p>
+                </div>
+
+                <div class="py-[10px] px-[40px]">
+                  <button
+                    onclick="handleEx5()"
+                    class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                  >
+                    Thực hiện phép tính
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt5"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                    <span></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- HET BAI TAP -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/tailwind.config.js"></script>
+  </body>
+</html>

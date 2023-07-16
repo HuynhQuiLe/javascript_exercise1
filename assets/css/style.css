@@ -1,0 +1,29 @@
+html {
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+header {
+  box-shadow: 0 0 2rem #2930421a !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: #3f80ea;
+  background-color: unset;
+  border: none;
+}
+
+.nav-tabs .nav-link {
+  color: #adb5bd;
+  font-weight: 400;
+  padding: 9px 0;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-tabs .nav-link:hover {
+  border: none;
+  color: white;
+}
+.card-box-shadow {
+  box-shadow: 0 0 0.875rem #2930420d;
+}
