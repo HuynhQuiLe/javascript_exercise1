@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bài Tập JAVASCRIPT - Buổi 1</title>
+    <title>Bài Tập JAVASCRIPT</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,142 +46,207 @@
           <p class="font-[500] text-[18px] tracking-[1px]">HuynhQui</p>
         </a>
 
-        <div class="flex items-center justufy-between py-[10px] px-[26px]">
-          <h5 class="w-[100%] flex items-center justufy-between font-[400]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather align-middle mr-2"
-            >
-              <line x1="4" y1="21" x2="4" y2="14"></line>
-              <line x1="4" y1="10" x2="4" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="12"></line>
-              <line x1="12" y1="8" x2="12" y2="3"></line>
-              <line x1="20" y1="21" x2="20" y2="16"></line>
-              <line x1="20" y1="12" x2="20" y2="3"></line>
-              <line x1="1" y1="14" x2="7" y2="14"></line>
-              <line x1="9" y1="8" x2="15" y2="8"></line>
-              <line x1="17" y1="16" x2="23" y2="16"></line>
-            </svg>
-            Javascript lesson 1
-          </h5>
-          <p
-            class="w-[20px] h-[20px] rounded-lg bg-custom_blue text-center leading-[20px]"
+        <!-- lesson 1 -->
+        <div id="lesson1">
+          <div
+            class="flex items-center justufy-between py-[10px] px-[26px] cursor-pointer hover:text-white transition-all duration-500 ease-in-out"
+            onclick="handleClickLesson1()"
           >
-            5
-          </p>
+            <h5 class="w-[100%] flex items-center justufy-between font-[400]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather align-middle mr-2"
+              >
+                <line x1="4" y1="21" x2="4" y2="14"></line>
+                <line x1="4" y1="10" x2="4" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="3"></line>
+                <line x1="20" y1="21" x2="20" y2="16"></line>
+                <line x1="20" y1="12" x2="20" y2="3"></line>
+                <line x1="1" y1="14" x2="7" y2="14"></line>
+                <line x1="9" y1="8" x2="15" y2="8"></line>
+                <line x1="17" y1="16" x2="23" y2="16"></line>
+              </svg>
+              Javascript lesson 1
+            </h5>
+            <p
+              class="w-[20px] h-[20px] rounded-lg bg-custom_blue text-center leading-[20px]"
+            >
+              5
+            </p>
+          </div>
+
+          <ul
+            class="nav nav-tabs flex flex-col px-[26px] border-none"
+            id="myTab"
+            role="tablist"
+          >
+            <li class="nav-item ml-[26px]">
+              <a
+                class="nav-link nav-link-lesson1 Ex1 active"
+                id="home-tab"
+                data-toggle="tab"
+                href="#JS1_BT1"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                >Bài tập 1</a
+              >
+            </li>
+            <li class="nav-item ml-[26px]">
+              <a
+                class="nav-link nav-link-lesson1"
+                id="profile-tab"
+                data-toggle="tab"
+                href="#JS1_BT2"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                >Bài tập 2</a
+              >
+            </li>
+            <li class="nav-item ml-[26px]">
+              <a
+                class="nav-link nav-link-lesson1"
+                id="contact-tab"
+                data-toggle="tab"
+                href="#JS1_BT3"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                >Bài tập 3</a
+              >
+            </li>
+            <li class="nav-item ml-[26px]">
+              <a
+                class="nav-link nav-link-lesson1"
+                id="contact-tab"
+                data-toggle="tab"
+                href="#JS1_BT4"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                >Bài tập 4</a
+              >
+            </li>
+            <li class="nav-item ml-[26px]">
+              <a
+                class="nav-link nav-link-lesson1"
+                id="contact-tab"
+                data-toggle="tab"
+                href="#JS1_BT5"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                >Bài tập 5</a
+              >
+            </li>
+          </ul>
         </div>
 
-        <ul
-          class="nav nav-tabs flex flex-col px-[26px] border-none"
-          id="myTab"
-          role="tablist"
-        >
-          <li class="nav-item ml-[26px]">
-            <a
-              class="nav-link active"
-              id="home-tab"
-              data-toggle="tab"
-              href="#JS1_BT1"
-              role="tab"
-              aria-controls="home"
-              aria-selected="true"
-              >Bài tập 1</a
+        <!-- LESSOON 5 -->
+        <div id="lesson5">
+          <div
+            class="flex items-center justufy-between py-[10px] px-[26px] text-custom_gray cursor-pointer hover:text-white transition-all duration-500 ease-in-out"
+            onclick="handleClickLesson5()"
+          >
+            <h5 class="w-[100%] flex items-center justufy-between font-[400]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather align-middle mr-2"
+              >
+                <line x1="4" y1="21" x2="4" y2="14"></line>
+                <line x1="4" y1="10" x2="4" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="3"></line>
+                <line x1="20" y1="21" x2="20" y2="16"></line>
+                <line x1="20" y1="12" x2="20" y2="3"></line>
+                <line x1="1" y1="14" x2="7" y2="14"></line>
+                <line x1="9" y1="8" x2="15" y2="8"></line>
+                <line x1="17" y1="16" x2="23" y2="16"></line>
+              </svg>
+              Javascript lesson 5
+            </h5>
+            <p
+              class="w-[20px] h-[20px] rounded-lg bg-custom_blue text-center leading-[20px] text-white"
             >
-          </li>
-          <li class="nav-item ml-[26px]">
-            <a
-              class="nav-link"
-              id="profile-tab"
-              data-toggle="tab"
-              href="#JS1_BT2"
-              role="tab"
-              aria-controls="profile"
-              aria-selected="false"
-              >Bài tập 2</a
-            >
-          </li>
-          <li class="nav-item ml-[26px]">
-            <a
-              class="nav-link"
-              id="contact-tab"
-              data-toggle="tab"
-              href="#JS1_BT3"
-              role="tab"
-              aria-controls="contact"
-              aria-selected="false"
-              >Bài tập 3</a
-            >
-          </li>
-          <li class="nav-item ml-[26px]">
-            <a
-              class="nav-link"
-              id="contact-tab"
-              data-toggle="tab"
-              href="#JS1_BT4"
-              role="tab"
-              aria-controls="contact"
-              aria-selected="false"
-              >Bài tập 4</a
-            >
-          </li>
-          <li class="nav-item ml-[26px]">
-            <a
-              class="nav-link"
-              id="contact-tab"
-              data-toggle="tab"
-              href="#JS1_BT5"
-              role="tab"
-              aria-controls="contact"
-              aria-selected="false"
-              >Bài tập 5</a
-            >
-          </li>
-        </ul>
+              4
+            </p>
+          </div>
+          <ul
+            class="nav nav-tabs flex flex-col px-[26px] border-none hidden"
+            id="myTab2"
+            role="tablist"
+          >
+            <li class="nav-item ml-[26px]">
+              <a
+                class="nav-link nav-link-lesson5 Ex1"
+                id="JS5-tab"
+                data-toggle="tab"
+                href="#JS5_BT1"
+                role="tab"
+                aria-controls="JS5"
+                aria-selected="true"
+                >Bài tập 1</a
+              >
+            </li>
+            <li class="nav-item ml-[26px]">
+              <a
+                class="nav-link nav-link-lesson5"
+                id="profile-tab"
+                data-toggle="tab"
+                href="#JS5_BT2"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                >Bài tập 2</a
+              >
+            </li>
+            <li class="nav-item ml-[26px]">
+              <a
+                class="nav-link nav-link-lesson5"
+                id="contact-tab"
+                data-toggle="tab"
+                href="#JS5_BT3"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                >Bài tập 3</a
+              >
+            </li>
+            <li class="nav-item ml-[26px]">
+              <a
+                class="nav-link nav-link-lesson5"
+                id="contact-tab"
+                data-toggle="tab"
+                href="#JS5_BT4"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                >Bài tập 4</a
+              >
+            </li>
+          </ul>
+        </div>
 
         <div
-          class="flex items-center justufy-between py-[10px] px-[26px] text-custom_gray"
-        >
-          <h5 class="w-[100%] flex items-center justufy-between font-[400]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather align-middle mr-2"
-            >
-              <line x1="4" y1="21" x2="4" y2="14"></line>
-              <line x1="4" y1="10" x2="4" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="12"></line>
-              <line x1="12" y1="8" x2="12" y2="3"></line>
-              <line x1="20" y1="21" x2="20" y2="16"></line>
-              <line x1="20" y1="12" x2="20" y2="3"></line>
-              <line x1="1" y1="14" x2="7" y2="14"></line>
-              <line x1="9" y1="8" x2="15" y2="8"></line>
-              <line x1="17" y1="16" x2="23" y2="16"></line>
-            </svg>
-            Javascript lesson 2
-          </h5>
-          <p
-            class="w-[20px] h-[20px] rounded-lg bg-custom_blue text-center leading-[20px] text-white"
-          >
-            0
-          </p>
-        </div>
-        <div
-          class="flex items-center justufy-between py-[10px] px-[26px] text-custom_gray"
+          class="flex items-center justufy-between py-[10px] px-[26px] text-custom_gray cursor-not-allowed"
         >
           <h5 class="w-[100%] flex items-center justufy-between font-[400]">
             <svg
@@ -216,7 +281,7 @@
         </div>
       </section>
 
-      <section class="w-[100%]">
+      <section class="w-[100%] max-h-[100vh] overflow-scroll">
         <header
           class="h-[70px] shadow-custom_shadow shadow-lg w-[100%] px-[14px] py-[20px] flex justify-between items-center"
         >
@@ -336,7 +401,7 @@
           <div class="tab-content" id="myTabContent">
             <!-- -------------------------BAI TAP 1------------------------------------ -->
             <div
-              class="tab-pane fade show active"
+              class="tab-pane fade show active JS1 lesson1-Ex1"
               id="JS1_BT1"
               role="tabpanel"
               aria-labelledby="home-tab"
@@ -432,7 +497,7 @@
 
             <!-- -------------------------BAI TAP 2------------------------------------ -->
             <div
-              class="tab-pane fade show"
+              class="tab-pane fade show JS1"
               id="JS1_BT2"
               role="tabpanel"
               aria-labelledby="home-tab"
@@ -560,7 +625,7 @@
 
             <!-- -------------------------BAI TAP 3------------------------------------ -->
             <div
-              class="tab-pane fade show"
+              class="tab-pane fade show JS1"
               id="JS1_BT3"
               role="tabpanel"
               aria-labelledby="home-tab"
@@ -658,7 +723,7 @@
 
             <!-- -------------------------BAI TAP 4------------------------------------ -->
             <div
-              class="tab-pane fade show"
+              class="tab-pane fade show JS1"
               id="JS1_BT4"
               role="tabpanel"
               aria-labelledby="home-tab"
@@ -766,7 +831,7 @@
 
             <!-- -------------------------BAI TAP 5------------------------------------ -->
             <div
-              class="tab-pane fade show"
+              class="tab-pane fade show JS1"
               id="JS1_BT5"
               role="tabpanel"
               aria-labelledby="home-tab"
@@ -863,7 +928,538 @@
               </div>
             </div>
 
-            <!-- HET BAI TAP -->
+            <!-- HET BAI TAP JS1 -->
+            <!-- HET BAI TAP JS1 -->
+            <!-- HET BAI TAP JS1 -->
+            <!-- HET BAI TAP JS1 -->
+            <!-- HET BAI TAP JS1 -->
+            <!-- HET BAI TAP JS1 -->
+
+            <!-- -------------------------BAI TAP 1------------------------------------ -->
+            <div
+              class="tab-pane fade show JS5 lesson5-Ex1"
+              id="JS5_BT1"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <p class="text-[20px] font-bold text-custom_black mb-4">
+                Bài tập 1
+              </p>
+              <p class="text-[18px]">Quản lý tuyển sinh</p>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-blue-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/problem.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Viết chương trình nhập: điểm chuẩn của hội đồng, điểm 3 môn
+                    thi của thí sinh, khu vực (nhập X nếu không thuộc khu vực ưu
+                    tiên) và đối tượng dự thi (nhập 0 nếu không thuộc đối tượng
+                    ưu tiên)
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/idea.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Thí sinh đậu khi: điểm tổng kết lớn hơn hoặc bằng điểm
+                    chuẩnvà không cos môn nào điểm 0
+                    <br />
+                    Điểm tổng kết = tổng điểm 3 môn + ưu tiên theo khu vực + ưu
+                    tiên theo đối tượng
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-yellow-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/abacus.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Hãy nhập số liệu vào các ô bên dưới để tiến hành thực hiện
+                    phép tính
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <input
+                    id="standard"
+                    type="number"
+                    class="rounded-[3px] w-[50%]"
+                    placeholder="Nhập điểm chuẩn của hội đồng"
+                  />
+                </div>
+
+                <div class="py-[10px] px-[40px] flex gap-2">
+                  <input
+                    id="subject1"
+                    type="number"
+                    class="rounded-[3px] w-[50%]"
+                    placeholder="Nhập điểm môn thứ 1"
+                  />
+                  <input
+                    id="subject2"
+                    type="number"
+                    class="rounded-[3px] w-[50%]"
+                    placeholder="Nhập điểm môn thứ 2"
+                  />
+                  <input
+                    id="subject3"
+                    type="number"
+                    class="rounded-[3px] w-[50%]"
+                    placeholder="Nhập điểm môn thứ 3"
+                  />
+                </div>
+
+                <div class="py-[10px] px-[40px] flex gap-2">
+                  <div class="flex flex-col w-[50%]">
+                    <label for="area"
+                      >Chọn ưu tiên theo khu vực
+                      <span class="text-gray-500"
+                        >(X: không thuộc khu vực ưu tiên)</span
+                      >
+                    </label>
+                    <select id="area">
+                      <option value="0">X</option>
+                      <option value="2">A</option>
+                      <option value="1">B</option>
+                      <option value="0.5">C</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col w-[50%]">
+                    <label for="target"
+                      >Chọn ưu tiên theo đối tượng
+                      <span class="text-gray-500"
+                        >(0: không thuộc đối tượng ưu tiên)</span
+                      >
+                    </label>
+                    <select id="target">
+                      <option value="0">0</option>
+                      <option value="2.5">1</option>
+                      <option value="1.5">2</option>
+                      <option value="1">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex pt-0">
+                  <p class="text-danger italic" id="validation-bt1-l5"></p>
+                </div>
+
+                <div class="py-[10px] px-[40px]">
+                  <button
+                    onclick="handleEx1L5()"
+                    class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                  >
+                    Thực hiện phép tính
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt1-l5"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- -------------------------BAI TAP 2------------------------------------ -->
+            <div
+              class="tab-pane fade show JS5"
+              id="JS5_BT2"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <p class="text-[20px] font-bold text-custom_black mb-4">
+                Bài tập 2
+              </p>
+              <p class="text-[18px]">Tính tiền điện</p>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-blue-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/problem.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Viết chương trình nhập vào thông tin tiêu thụ điện: Tên, số
+                    Kw
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/idea.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    50Kw đầu: 500 VND/Kw <br />
+                    50Kw kế: 650 VND/Kw <br />
+                    100Kw kế: 850 VND/Kw <br />
+                    150Kw kế: 1.100 VND/Kw <br />
+                    Còn lại: 1.300 VND/Kw
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-yellow-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/abacus.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Hãy nhập số liệu vào các ô bên dưới để tiến hành thực hiện
+                    phép tính
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <input
+                    name="name"
+                    id="name"
+                    type="text"
+                    class="rounded-[3px] w-[50%] mr-2"
+                    placeholder="Nhập tên chủ hộ"
+                  />
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <input
+                    name="Kw"
+                    id="Kw"
+                    type="number"
+                    class="rounded-[3px] w-[50%] mr-2"
+                    placeholder="Nhập số Kw đã tiêu thụ"
+                  />
+                </div>
+
+                <div class="py-[10px] px-[40px] flex pt-0">
+                  <p id="validation-bt2-l5" class="text-danger italic"></p>
+                </div>
+
+                <div class="py-[10px] px-[40px]">
+                  <button
+                    onclick="handleEx2L5()"
+                    class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                  >
+                    Thực hiện phép tính
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt2-l5"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                    <span>VND</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- -------------------------BAI TAP 3------------------------------------ -->
+            <div
+              class="tab-pane fade show JS5"
+              id="JS5_BT3"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <p class="text-[20px] font-bold text-custom_black mb-4">
+                Bài tập 3
+              </p>
+              <p class="text-[18px]">Tính thuế thu nhập cá nhân</p>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-blue-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/problem.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Viết chương trình nhập vào thông tin của 1 cá nhân: Họ tên,
+                    tổng thu nhập năm, số người phụ thuộc
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/idea.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Thu nhập chịu thuế = Tổng thu nhập năm - 4.000.000 - số
+                    người phụ thuộc * 1.600.000
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-yellow-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/abacus.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Hãy nhập số liệu vào các ô bên dưới để tiến hành thực hiện
+                    phép tính
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <input
+                    id="fullName"
+                    type="text"
+                    class="rounded-[3px] w-[50%]"
+                    placeholder="Nhập họ và tên"
+                  />
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <input
+                    id="income"
+                    type="number"
+                    class="rounded-[3px] w-[50%]"
+                    placeholder="Nhập tổng thu nhập năm"
+                  />
+                  <span class="font-bold ml-[10px] leading-[42px]">VND</span>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <input
+                    id="dependency"
+                    type="number"
+                    class="rounded-[3px] w-[50%]"
+                    placeholder="Nhập người phụ thuộc"
+                  />
+                </div>
+
+                <div class="py-[10px] px-[40px] flex pt-0">
+                  <p id="validation-bt3-l5" class="text-danger italic"></p>
+                </div>
+
+                <div class="py-[10px] px-[40px]">
+                  <button
+                    onclick="handleEx3L5()"
+                    class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                  >
+                    Thực hiện phép tính
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt3-l5"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- -------------------------BAI TAP 4------------------------------------ -->
+            <div
+              class="tab-pane fade show JS5"
+              id="JS5_BT4"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <p class="text-[20px] font-bold text-custom_black mb-4">
+                Bài tập 4
+              </p>
+              <p class="text-[18px]">Tính tiền cáp</p>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-blue-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/problem.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Viết chương trình tính hoá đơn khách hàng, cho phép người
+                    dùng nhập: Mã khách hàng, loại khách hàng, số kết nối, số
+                    kênh cao cấp. Nếu loại khách hàng là Doanh nghiệp ô nhập kết
+                    nối sẽ hiện lên, nếu loại khách hàng là nhà dân thì ô nhập
+                    kết nối sẽ disabled
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/idea.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <div>
+                    <p>1. Nhà dân</p>
+                    <p>&nbsp; &nbsp; - Phí xử lý hoá đơn: 4.5$</p>
+                    <p>&nbsp; &nbsp; - Phí dịch vụ cơ bản: 20.5$</p>
+                    <p>&nbsp; &nbsp; - Thuê kênh cao cấp: 7.5$/ kênh</p>
+                    <p>2. Doanh nghiệp</p>
+                    <p>&nbsp; &nbsp; - Phí xử lý hoá đơn: 15$</p>
+                    <p>
+                      &nbsp; &nbsp; - Phí dịch vụ cơ bản: 75$ cho tổng 10 kết
+                      nối đầu, mỗi kết nối thêm 5$/ kết nối
+                    </p>
+                    <p>&nbsp; &nbsp; - Thuê kênh cao cấp: 50$/ kênh</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-yellow-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/abacus.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Hãy nhập số liệu vào các ô bên dưới để tiến hành thực hiện
+                    phép tính
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <input
+                    id="code"
+                    type="text"
+                    class="rounded-[3px] w-[50%] mr-3"
+                    placeholder="Nhập mã khách hàng"
+                  />
+
+                  <div class="flex w-[50%] items-center">
+                    <label for="type" class="block w-[50%]"
+                      >Chọn loại khách hàng</label
+                    >
+                    <select
+                      name=""
+                      id="type"
+                      class="w-[50%]"
+                      onchange="handleChangeType(event)"
+                    >
+                      <option value="0">Nhà dân</option>
+                      <option value="1">Doanh nghiệp</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <input
+                    id="connect"
+                    type="number"
+                    class="rounded-[3px] w-[50%] mr-3"
+                    placeholder="Nhập số kết nối"
+                  />
+
+                  <input
+                    id="channel"
+                    type="number"
+                    class="rounded-[3px] w-[50%]"
+                    placeholder="Nhập số kênh cao cấp"
+                  />
+                </div>
+
+                <div class="py-[10px] px-[40px] flex pt-0">
+                  <p id="validation-bt4-l5" class="text-danger italic"></p>
+                </div>
+
+                <div class="py-[10px] px-[40px]">
+                  <button
+                    onclick="handleEx4L5()"
+                    class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                  >
+                    Thực hiện phép tính
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt4-l5"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -883,7 +1479,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/js/main.js"></script>
     <script src="./assets/js/tailwind.config.js"></script>
+    <script src="./assets/js/handleTabs.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
