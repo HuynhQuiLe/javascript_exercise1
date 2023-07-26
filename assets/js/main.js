@@ -361,6 +361,44 @@ function handleEx2L5() {
 }
 
 // ----------BAI TAP 3 -----------
+let isDemo = false;
+function handleTonggle() {
+  if (!isDemo) {
+    document
+      .querySelector(".tonggle__button p")
+      .classList.remove("text-gray-300");
+    document
+      .querySelector(".tonggle__button > div")
+      .classList.remove("bg-gray-200]");
+    document
+      .querySelector(".tonggle__button > div")
+      .classList.remove("before:left-[5px]");
+    document
+      .querySelector(".tonggle__button > div")
+      .classList.add("bg-green-400");
+    document
+      .querySelector(".tonggle__button > div")
+      .classList.add("before:left-[35px]");
+    isDemo = true;
+  } else {
+    document.querySelector(".tonggle__button p").classList.add("text-gray-300");
+    document
+      .querySelector(".tonggle__button > div")
+      .classList.add("bg-gray-200]");
+    document
+      .querySelector(".tonggle__button > div")
+      .classList.add("before:left-[5px]");
+    document
+      .querySelector(".tonggle__button > div")
+      .classList.remove("bg-green-400");
+    document
+      .querySelector(".tonggle__button > div")
+      .classList.remove("before:left-[35px]");
+    isDemo = false;
+  }
+}
+
+console.log(isDemo);
 function handleEx3L5() {
   const fullName = document.querySelector("#fullName").value;
   const incomeInput = document.querySelector("#income");
@@ -413,51 +451,73 @@ function handleEx3L5() {
     return;
   }
   const shortIncomeTaxes = incomeTaxes / 1000000;
-  if (shortIncomeTaxes <= 60) {
-    taxes = (shortIncomeTaxes * 5) / 100;
-  } else if (shortIncomeTaxes <= 120) {
-    taxes = (60 * 5) / 100 + ((shortIncomeTaxes - 60) * 10) / 100;
-  } else if (shortIncomeTaxes <= 210) {
-    taxes =
-      (60 * 5) / 100 + (60 * 10) / 100 + ((shortIncomeTaxes - 120) * 15) / 100;
-  } else if (shortIncomeTaxes <= 384) {
-    taxes =
-      (60 * 5) / 100 +
-      (60 * 10) / 100 +
-      (90 * 15) / 100 +
-      ((shortIncomeTaxes - 210) * 20) / 100;
-  } else if (shortIncomeTaxes <= 624) {
-    taxes =
-      (60 * 5) / 100 +
-      (60 * 10) / 100 +
-      (90 * 15) / 100 +
-      (174 * 20) / 100 +
-      ((shortIncomeTaxes - 384) * 25) / 100;
-  } else if (shortIncomeTaxes <= 960) {
-    taxes =
-      (60 * 5) / 100 +
-      (60 * 10) / 100 +
-      (90 * 15) / 100 +
-      (174 * 20) / 100 +
-      (240 * 25) / 100 +
-      ((shortIncomeTaxes - 624) * 30) / 100;
-  } else {
-    taxes =
-      (60 * 5) / 100 +
-      (60 * 10) / 100 +
-      (90 * 15) / 100 +
-      (174 * 20) / 100 +
-      (240 * 25) / 100 +
-      (336 * 30) / 100 +
-      ((shortIncomeTaxes - 960) * 35) / 100;
+  if (!isDemo) {
+    if (shortIncomeTaxes <= 60) {
+      taxes = (shortIncomeTaxes * 5) / 100;
+    } else if (shortIncomeTaxes <= 120) {
+      taxes = (60 * 5) / 100 + ((shortIncomeTaxes - 60) * 10) / 100;
+    } else if (shortIncomeTaxes <= 210) {
+      taxes =
+        (60 * 5) / 100 +
+        (60 * 10) / 100 +
+        ((shortIncomeTaxes - 120) * 15) / 100;
+    } else if (shortIncomeTaxes <= 384) {
+      taxes =
+        (60 * 5) / 100 +
+        (60 * 10) / 100 +
+        (90 * 15) / 100 +
+        ((shortIncomeTaxes - 210) * 20) / 100;
+    } else if (shortIncomeTaxes <= 624) {
+      taxes =
+        (60 * 5) / 100 +
+        (60 * 10) / 100 +
+        (90 * 15) / 100 +
+        (174 * 20) / 100 +
+        ((shortIncomeTaxes - 384) * 25) / 100;
+    } else if (shortIncomeTaxes <= 960) {
+      taxes =
+        (60 * 5) / 100 +
+        (60 * 10) / 100 +
+        (90 * 15) / 100 +
+        (174 * 20) / 100 +
+        (240 * 25) / 100 +
+        ((shortIncomeTaxes - 624) * 30) / 100;
+    } else {
+      taxes =
+        (60 * 5) / 100 +
+        (60 * 10) / 100 +
+        (90 * 15) / 100 +
+        (174 * 20) / 100 +
+        (240 * 25) / 100 +
+        (336 * 30) / 100 +
+        ((shortIncomeTaxes - 960) * 35) / 100;
+    }
+  }
+
+  if (isDemo) {
+    if (shortIncomeTaxes <= 60) {
+      taxes = (shortIncomeTaxes * 5) / 100;
+    } else if (shortIncomeTaxes <= 120) {
+      taxes = (shortIncomeTaxes * 10) / 100;
+    } else if (shortIncomeTaxes <= 210) {
+      taxes = (shortIncomeTaxes * 15) / 100;
+    } else if (shortIncomeTaxes <= 384) {
+      taxes = (shortIncomeTaxes * 20) / 100;
+    } else if (shortIncomeTaxes <= 624) {
+      taxes = (shortIncomeTaxes * 25) / 100;
+    } else if (shortIncomeTaxes <= 960) {
+      taxes = (shortIncomeTaxes * 30) / 100;
+    } else {
+      taxes = (shortIncomeTaxes * 35) / 100;
+    }
   }
 
   //   PRINT RESULT
   printResult(
     resultTag,
-    `${numberWithCommas(
-      Math.floor(taxes * 1000000)
-    )} VND <span id="explain" class="text-gray-300 block">Thu nhập chịu thuế của bạn là: ${numberWithCommas(
+    `${(taxes * 1000000).toLocaleString()} VND - Tính theo ${
+      isDemo ? "Demo code" : "thực tế"
+    }<span id="explain" class="text-gray-300 block">Thu nhập chịu thuế của ${fullName} là: ${numberWithCommas(
       Math.floor(incomeTaxes)
     )} VND</span>`
   );
@@ -576,7 +636,7 @@ function handleEx4L5() {
       //   PRINT RESULT
       printResult(
         resultTag,
-        `${total} $ <span id="explain" class="text-gray-300 block">Loại khách hàng: ${textType}</span>`
+        `${total} $ <span id="explain" class="text-gray-300 block">Loại khách hàng: ${textType} - ${code}</span>`
       );
       break;
 
@@ -585,7 +645,7 @@ function handleEx4L5() {
       //   PRINT RESULT
       printResult(
         resultTag,
-        `${total} $ <span id="explain" class="text-gray-300 block">Loại khách hàng: ${textType}</span>`
+        `${total} $ <span id="explain" class="text-gray-300 block">Loại khách hàng: ${textType} - ${code}</span>`
       );
       break;
   }
