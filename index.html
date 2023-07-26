@@ -1290,13 +1290,24 @@
                   <p id="validation-bt3-l5" class="text-danger italic"></p>
                 </div>
 
-                <div class="py-[10px] px-[40px]">
+                <div
+                  class="py-[10px] px-[40px] pr-0 flex items-center justify-between w-[50%]"
+                >
                   <button
                     onclick="handleEx3L5()"
-                    class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                    class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all duration-500 out-expo hover:scale-[98%]"
                   >
                     Thực hiện phép tính
                   </button>
+                  <div
+                    class="flex items-center justify-end tonggle__button cursor-pointer"
+                    onclick="handleTonggle()"
+                  >
+                    <div
+                      class="relative w-[60px] h-[30px] before:transition-all before:duration-500 before:ease-in-out rounded-full bg-gray-200 mr-[10px] before:content-[''] before:absolute before:top-[5px] before:left-[5px] before:w-[20px] before:h-[20px] before:rounded-full before:bg-white"
+                    ></div>
+                    <p class="text-gray-300">Theo DEMO code</p>
+                  </div>
                 </div>
               </div>
 
