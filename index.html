@@ -52,7 +52,9 @@
             class="flex items-center justufy-between py-[10px] px-[26px] cursor-pointer hover:text-white transition-all duration-500 ease-in-out"
             onclick="handleClickLesson1()"
           >
-            <h5 class="w-[100%] flex items-center justufy-between font-[400]">
+            <h5
+              class="w-[100%] flex items-center hover:text-white justufy-between font-[400]"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -245,39 +247,60 @@
           </ul>
         </div>
 
-        <div
-          class="flex items-center justufy-between py-[10px] px-[26px] text-custom_gray cursor-not-allowed"
-        >
-          <h5 class="w-[100%] flex items-center justufy-between font-[400]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather align-middle mr-2"
-            >
-              <line x1="4" y1="21" x2="4" y2="14"></line>
-              <line x1="4" y1="10" x2="4" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="12"></line>
-              <line x1="12" y1="8" x2="12" y2="3"></line>
-              <line x1="20" y1="21" x2="20" y2="16"></line>
-              <line x1="20" y1="12" x2="20" y2="3"></line>
-              <line x1="1" y1="14" x2="7" y2="14"></line>
-              <line x1="9" y1="8" x2="15" y2="8"></line>
-              <line x1="17" y1="16" x2="23" y2="16"></line>
-            </svg>
-            Javascript lesson 3
-          </h5>
-          <p
-            class="w-[20px] h-[20px] rounded-lg bg-custom_blue text-center leading-[20px] text-white"
+        <div id="lesson7">
+          <div
+            class="flex items-center justufy-between py-[10px] px-[26px] text-custom_gray cursor-pointer hover:text-white transition-all duration-500 ease-in-out"
+            onclick="handleClickLesson7()"
           >
-            0
-          </p>
+            <h5 class="w-[100%] flex items-center justufy-between font-[400]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather align-middle mr-2"
+              >
+                <line x1="4" y1="21" x2="4" y2="14"></line>
+                <line x1="4" y1="10" x2="4" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="3"></line>
+                <line x1="20" y1="21" x2="20" y2="16"></line>
+                <line x1="20" y1="12" x2="20" y2="3"></line>
+                <line x1="1" y1="14" x2="7" y2="14"></line>
+                <line x1="9" y1="8" x2="15" y2="8"></line>
+                <line x1="17" y1="16" x2="23" y2="16"></line>
+              </svg>
+              Javascript lesson 7
+            </h5>
+            <p
+              class="w-[20px] h-[20px] rounded-lg bg-custom_blue text-center leading-[20px] text-white"
+            >
+              1
+            </p>
+          </div>
+          <ul
+            class="nav nav-tabs flex flex-col px-[26px] border-none hidden"
+            id="myTab3"
+            role="tablist"
+          >
+            <li class="nav-item ml-[26px]">
+              <a
+                class="nav-link nav-link-lesson7 Ex1"
+                id="JS7-tab"
+                data-toggle="tab"
+                href="#JS7_BT1"
+                role="tab"
+                aria-controls="JS7"
+                aria-selected="true"
+                >Bài tập 1</a
+              >
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -1471,6 +1494,447 @@
                 </div>
               </div>
             </div>
+            <!-- HET BAI TAP JS5 -->
+            <!-- HET BAI TAP JS5 -->
+            <!-- HET BAI TAP JS5 -->
+            <!-- HET BAI TAP JS5 -->
+            <!-- HET BAI TAP JS5 -->
+            <!-- HET BAI TAP JS5 -->
+
+            <!-- -------------------------BAI TAP 1------------------------------------ -->
+            <div
+              class="tab-pane fade show JS7 lesson7-Ex1"
+              id="JS7_BT1"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <p class="text-[20px] font-bold text-custom_black mb-4">
+                Bài tập 1
+              </p>
+              <p class="text-[18px]">Thực hiện các tính năng với mảng số</p>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-blue-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/problem.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Viết chương trình cho người dùng nhập vào các số nguyên và
+                    lưu trữ trong mảng.
+                  </p>
+                </div>
+
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/idea.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Thiết kế layout cho người dùng chọn thực hiện các chức năng
+                    bên dưới:
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-yellow-500 before:top-0 before:left-0 py-[10px]"
+              >
+                <div class="py-[10px] px-[40px] flex">
+                  <img
+                    src="./assets/img/abacus.png"
+                    class="w-[40px] h-[40px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p>
+                    Hãy nhập số liệu vào các ô bên dưới để tiến hành thực hiện
+                    phép tính
+                  </p>
+                </div>
+
+                <div class="flex">
+                  <div class="w-[50%]">
+                    <div class="py-[10px] px-[40px] flex">
+                      <input
+                        id="interger"
+                        type="number"
+                        class="rounded-[3px] w-[100%]"
+                        placeholder="Nhập số nguyên"
+                      />
+                    </div>
+
+                    <div class="py-[10px] px-[40px] flex pt-0">
+                      <p class="text-danger italic" id="validation-bt1-l7"></p>
+                    </div>
+
+                    <div class="py-[10px] px-[40px]">
+                      <button
+                        onclick="handleAddNumber()"
+                        class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                      >
+                        Nhập số
+                      </button>
+                    </div>
+                  </div>
+                  <div class="changePosition w-[50%] hidden">
+                    <div class="flex justify-start ml-[30px] gap-3">
+                      <div class="py-[10px] flex">
+                        <input
+                          id="p1"
+                          type="number"
+                          class="rounded-[3px] w-[100%]"
+                          placeholder="Nhập vị trí 1"
+                        />
+                      </div>
+                      <div class="py-[10px] flex">
+                        <input
+                          id="p2"
+                          type="number"
+                          class="rounded-[3px] w-[100%]"
+                          placeholder="Nhập vị trí 2"
+                        />
+                      </div>
+                    </div>
+                    <div class="py-[10px] px-[40px] pt-0">
+                      <p class="text-gray-400 italic">
+                        * Vị trí được đánh số từ 0 <br />
+                        ** Lần đổi tiếp theo sẽ dựa trên thứ tự của lần đổi
+                        trước đó.
+                      </p>
+                      <p class="text-danger italic" id="validation-bt6-l7"></p>
+                    </div>
+                    <div class="py-[10px]">
+                      <button
+                        onclick="handleProblem6()"
+                        class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%] ml-[30px]"
+                      >
+                        Đổi chỗ
+                      </button>
+                    </div>
+                  </div>
+                  <div class="realNumber w-[50%] hidden">
+                    <div class="py-[10px] px-[40px] flex">
+                      <input
+                        id="real__number"
+                        type="number"
+                        class="rounded-[3px] w-[100%]"
+                        placeholder="Nhập số thực"
+                      />
+                    </div>
+
+                    <div class="py-[10px] px-[40px] flex pt-0">
+                      <p class="text-danger italic" id="validation-bt9-l7"></p>
+                    </div>
+
+                    <div id="showRealNumberArray" class="px-[40px]"></div>
+
+                    <div class="py-[10px] px-[40px]">
+                      <button
+                        onclick="handleProblem9()"
+                        class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                      >
+                        Nhập số
+                      </button>
+
+                      <button
+                        onclick="handleProblem9Main()"
+                        class="bg-red-500 rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                      >
+                        Tìm số lượng số nguyên
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-black before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px]">
+                  <div class="flex items-center">
+                    <img
+                      src="./assets/img/parenthesis.png"
+                      class="w-[30px] h-[30px] mr-[20px]"
+                      alt="evaluation"
+                    />
+                    <p class="font-bold text-[18px]">
+                      <span
+                        id="arrayNumber"
+                        class="inline-block min-w-[100px] mr-1"
+                      >
+                      </span>
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap gap-2 mt-3 hidden" id="problems">
+                    <button
+                      onclick="handleProblem1()"
+                      class="bg-yellow-300 rounded-[3px] px-[30px] py-[8px] text-black outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                    >
+                      1. Tổng các số dương
+                    </button>
+
+                    <button
+                      onclick="handleProblem2()"
+                      class="bg-dark rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                    >
+                      2. Đếm các số dương
+                    </button>
+
+                    <button
+                      onclick="handleProblem3()"
+                      class="bg-blue-300 rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                    >
+                      3. Số nhỏ nhất
+                    </button>
+
+                    <button
+                      onclick="handleProblem4()"
+                      class="bg-pink-500 rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                    >
+                      4. Số dương nhỏ nhất
+                    </button>
+
+                    <button
+                      onclick="handleProblem5()"
+                      class="bg-orange-300 rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                    >
+                      5. Số chẵn cuối cùng
+                    </button>
+
+                    <button
+                      onclick="handleClickBT6()"
+                      class="bg-purple-300 rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                    >
+                      6. Đổi chỗ 2 giá trị
+                    </button>
+
+                    <button
+                      onclick="handleProblem7()"
+                      class="bg-red-500 rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                    >
+                      7. Sắp xếp mảng theo thứ tự tăng dần
+                    </button>
+
+                    <button
+                      onclick="handleProblem8()"
+                      class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                    >
+                      8. Số nguyên tố đầu tiên
+                    </button>
+
+                    <button
+                      onclick="handleClickBT9()"
+                      class="bg-green-700 rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                    >
+                      9. Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao
+                      nhiêu số nguyên?
+                    </button>
+
+                    <button
+                      onclick="handleProblem10()"
+                      class="bg-pink-100 rounded-[3px] px-[30px] py-[8px] text-black outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                    >
+                      10. So sánh số lượng số dương và số lượng số âm xem số nào
+                      nhiều hơn.
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="result-l7-1 hidden card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt1-l7"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="result-l7-2 hidden card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt2-l7"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="result-l7-3 hidden card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt3-l7"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="result-l7-4 hidden card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt4-l7"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="result-l7-5 hidden card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt5-l7"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="result-l7-6 hidden card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt6-l7"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="result-l7-7 hidden card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt7-l7"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="result-l7-8 hidden card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt8-l7"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="result-l7-9 hidden card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt9-l7"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="result-l7-10 hidden card-box-shadow h-[100%] rounded-[4px] bg-white relative before:absolute overflow-hidden mt-[30px] before:content-[''] before:block before:w-[5px] before:h-[100%] before:bg-green-500 before:top-0 before:left-0"
+              >
+                <div class="py-[10px] px-[40px] flex items-center">
+                  <img
+                    src="./assets/img/evaluation.png"
+                    class="w-[30px] h-[30px] mr-[20px]"
+                    alt="evaluation"
+                  />
+                  <p class="font-bold text-[18px]">
+                    <span
+                      id="result-bt10-l7"
+                      class="inline-block min-w-[100px] mr-1"
+                    >
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1492,6 +1956,7 @@
     ></script>
     <script src="./assets/js/tailwind.config.js"></script>
     <script src="./assets/js/handleTabs.js"></script>
+    <script src="./assets/js/lesson7_8.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

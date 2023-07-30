@@ -398,7 +398,6 @@ function handleTonggle() {
   }
 }
 
-console.log(isDemo);
 function handleEx3L5() {
   const fullName = document.querySelector("#fullName").value;
   const incomeInput = document.querySelector("#income");
