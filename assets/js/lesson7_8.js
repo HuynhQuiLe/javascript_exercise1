@@ -1,14 +1,14 @@
 let numberArray = [];
+let realArray = [];
+
 let showArrayText = "";
 let isEx1 = false;
 let isEx2 = false;
 let isEx3 = false;
 let isEx4 = false;
 let isEx5 = false;
-let isEx6 = false;
 let isEx7 = false;
 let isEx8 = false;
-let isEx9 = false;
 let isEx10 = false;
 
 function handleAddNumber() {
@@ -66,20 +66,12 @@ function handleAddNumber() {
     handleProblem5();
   }
 
-  if (isEx6) {
-    handleProblem6();
-  }
-
   if (isEx7) {
     handleProblem7();
   }
 
   if (isEx8) {
     handleProblem8();
-  }
-
-  if (isEx9) {
-    handleProblem9();
   }
 
   if (isEx10) {
@@ -159,10 +151,52 @@ function handleProblem5() {
 }
 
 function handleProblem6() {
-  isEx6 = true;
+  const p1Input = document.querySelector("#p1");
+  const p2Input = document.querySelector("#p2");
+  const error = document.querySelector("#validation-bt6-l7");
+
+  const p1 = p1Input.value * 1;
+  const p2 = p2Input.value * 1;
+
+  //   validation
+  if (p1Input.value === "" || p2Input.value === "") {
+    error.innerHTML = "* Tất cả các trường không được để trống.";
+    return;
+  }
+
+  if (p1 < 0 || p2 < 0) {
+    error.innerHTML = "* Vị trí không được bé hơn 0.";
+    return;
+  }
+
+  if (p1 >= numberArray.length || p2 >= numberArray.length) {
+    error.innerHTML = "* Vị trí vượt quá độ dài của mảng";
+    return;
+  }
+
+  if (p1 === p2) {
+    error.innerHTML = "* Hai vị trí không được trùng nhau";
+    return;
+  }
+
+  //accpet input data
+  error.innerHTML = "";
   document.querySelector(".result-l7-6").classList.remove("hidden");
 
-  document.querySelector("#result-bt6-l7").innerHTML = ``;
+  //   lay gia tri vitri 2 dua qua vi tri 1 va lay duoc gia tri 1
+  var valueP1 = numberArray.splice(p1, 1, numberArray[p2]);
+  numberArray.splice(p2, 1, valueP1[0]);
+  const newArray = numberArray;
+
+  let showText = "";
+
+  newArray.forEach((number, index) => {
+    showText += index > 0 ? `, ${number}` : `${number}`;
+  });
+
+  document.querySelector(
+    "#result-bt6-l7"
+  ).innerHTML = `6. Mảng sau khi đổi 2 vị trí là: ${showText}`;
 }
 
 function handleProblem7() {
@@ -187,14 +221,88 @@ function handleProblem8() {
   isEx8 = true;
   document.querySelector(".result-l7-8").classList.remove("hidden");
 
-  document.querySelector("#result-bt8-l7").innerHTML = ``;
+  function isPrime(num) {
+    for (let start = 2; num > start; start++) {
+      if (num % start == 0) {
+        return false;
+      }
+    }
+    return num > 1;
+  }
+
+  const primeArray = numberArray.filter(isPrime);
+
+  document.querySelector(
+    "#result-bt8-l7"
+  ).innerHTML = `8. Số nguyên tố đầu tiên trong mảng: ${
+    primeArray.length > 0 ? primeArray[0] : -1
+  }`;
 }
 
 function handleProblem9() {
-  isEx9 = true;
+  const realInput = document.querySelector("#real__number");
+  const error = document.querySelector("#validation-bt9-l7");
+  const realNumber = realInput.value * 1;
+
+  //   validation
+  if (realInput.value === "") {
+    error.innerHTML = "* vui lòng khồn để trống";
+    return;
+  }
+
+  //   allow input data
+  error.innerHTML = "";
+  realArray.push(realNumber);
+
+  //   show real array
+
+  let showText = "";
+
+  realArray.forEach((number, index) => {
+    showText += index > 0 ? `, ${number}` : `${number}`;
+  });
+
+  document.querySelector(
+    "#showRealNumberArray"
+  ).innerHTML = `<div class="flex items-center">
+<img
+  src="./assets/img/parenthesis.png"
+  class="w-[30px] h-[30px] mr-[20px]"
+  alt="evaluation"
+/>
+<p class="font-bold text-[18px]">
+  <span
+    class="inline-block min-w-[100px] mr-1"
+  >
+  ${showText}
+  </span>
+</p>
+</div>`;
+
+  realInput.value = "";
+}
+
+function handleProblem9Main() {
+  const error = document.querySelector("#validation-bt9-l7");
+
+  if (realArray.length === 0) {
+    error.innerHTML = "* Vui lòng nhập số thực để tạo mảng";
+    return;
+  }
+
   document.querySelector(".result-l7-9").classList.remove("hidden");
 
-  document.querySelector("#result-bt9-l7").innerHTML = ``;
+  let real = 0;
+
+  realArray.forEach((number) => {
+    if (number !== 0) {
+      number % 1 === 0 ? real++ : real;
+    }
+  });
+
+  document.querySelector(
+    "#result-bt9-l7"
+  ).innerHTML = `9. Trong mảng có ${real} số nguyên`;
 }
 
 function handleProblem10() {
@@ -217,4 +325,14 @@ function handleProblem10() {
   }
 
   document.querySelector("#result-bt10-l7").innerHTML = `10. ${compare}`;
+}
+
+function handleClickBT6() {
+  document.querySelector(".changePosition").classList.remove("hidden");
+  document.querySelector(".realNumber").classList.add("hidden");
+}
+
+function handleClickBT9() {
+  document.querySelector(".changePosition").classList.add("hidden");
+  document.querySelector(".realNumber").classList.remove("hidden");
 }

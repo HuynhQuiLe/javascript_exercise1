@@ -1556,26 +1556,98 @@
                   </p>
                 </div>
 
-                <div class="py-[10px] px-[40px] flex">
-                  <input
-                    id="interger"
-                    type="number"
-                    class="rounded-[3px] w-[50%]"
-                    placeholder="Nhập số nguyên"
-                  />
-                </div>
+                <div class="flex">
+                  <div class="w-[50%]">
+                    <div class="py-[10px] px-[40px] flex">
+                      <input
+                        id="interger"
+                        type="number"
+                        class="rounded-[3px] w-[100%]"
+                        placeholder="Nhập số nguyên"
+                      />
+                    </div>
 
-                <div class="py-[10px] px-[40px] flex pt-0">
-                  <p class="text-danger italic" id="validation-bt1-l7"></p>
-                </div>
+                    <div class="py-[10px] px-[40px] flex pt-0">
+                      <p class="text-danger italic" id="validation-bt1-l7"></p>
+                    </div>
 
-                <div class="py-[10px] px-[40px]">
-                  <button
-                    onclick="handleAddNumber()"
-                    class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
-                  >
-                    Nhập số
-                  </button>
+                    <div class="py-[10px] px-[40px]">
+                      <button
+                        onclick="handleAddNumber()"
+                        class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                      >
+                        Nhập số
+                      </button>
+                    </div>
+                  </div>
+                  <div class="changePosition w-[50%] hidden">
+                    <div class="flex justify-start ml-[30px] gap-3">
+                      <div class="py-[10px] flex">
+                        <input
+                          id="p1"
+                          type="number"
+                          class="rounded-[3px] w-[100%]"
+                          placeholder="Nhập vị trí 1"
+                        />
+                      </div>
+                      <div class="py-[10px] flex">
+                        <input
+                          id="p2"
+                          type="number"
+                          class="rounded-[3px] w-[100%]"
+                          placeholder="Nhập vị trí 2"
+                        />
+                      </div>
+                    </div>
+                    <div class="py-[10px] px-[40px] pt-0">
+                      <p class="text-gray-400 italic">
+                        * Vị trí được đánh số từ 0 <br />
+                        ** Lần đổi tiếp theo sẽ dựa trên thứ tự của lần đổi
+                        trước đó.
+                      </p>
+                      <p class="text-danger italic" id="validation-bt6-l7"></p>
+                    </div>
+                    <div class="py-[10px]">
+                      <button
+                        onclick="handleProblem6()"
+                        class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%] ml-[30px]"
+                      >
+                        Đổi chỗ
+                      </button>
+                    </div>
+                  </div>
+                  <div class="realNumber w-[50%] hidden">
+                    <div class="py-[10px] px-[40px] flex">
+                      <input
+                        id="real__number"
+                        type="number"
+                        class="rounded-[3px] w-[100%]"
+                        placeholder="Nhập số thực"
+                      />
+                    </div>
+
+                    <div class="py-[10px] px-[40px] flex pt-0">
+                      <p class="text-danger italic" id="validation-bt9-l7"></p>
+                    </div>
+
+                    <div id="showRealNumberArray" class="px-[40px]"></div>
+
+                    <div class="py-[10px] px-[40px]">
+                      <button
+                        onclick="handleProblem9()"
+                        class="bg-custom_btn rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                      >
+                        Nhập số
+                      </button>
+
+                      <button
+                        onclick="handleProblem9Main()"
+                        class="bg-red-500 rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
+                      >
+                        Tìm số lượng số nguyên
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -1634,7 +1706,7 @@
                     </button>
 
                     <button
-                      onclick="handleProblem6()"
+                      onclick="handleClickBT6()"
                       class="bg-purple-300 rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
                     >
                       6. Đổi chỗ 2 giá trị
@@ -1655,7 +1727,7 @@
                     </button>
 
                     <button
-                      onclick="handleProblem8()"
+                      onclick="handleClickBT9()"
                       class="bg-green-700 rounded-[3px] px-[30px] py-[8px] text-white outline-none focus:outline-none transition-all diration-500 out-expo hover:scale-[98%]"
                     >
                       9. Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao
