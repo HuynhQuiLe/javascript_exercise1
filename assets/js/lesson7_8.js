@@ -23,7 +23,7 @@ function handleAddNumber() {
     return;
   }
   if (number % 1 !== 0) {
-    error.innerHTML = "* Vui long nhập số nguyên.";
+    error.innerHTML = "* Vui lòng nhập số nguyên.";
     return;
   }
   //   allow input data
